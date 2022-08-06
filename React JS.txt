@@ -1,0 +1,65 @@
+const root = document.querySelector('#root');
+const element = React.createElement('h1', {
+   children: 'Hello from React!',
+   className: 'heading-1',
+});
+
+ReactDOM.render(element, root);
+
+# Teknologi
+ - JSX
+ - Babel
+   - boleh install menggunakan npm atau melakukan import (standalone)
+   - .babelrc - file dengan extensi ini digunakan utk buat configurasi pada babel
+
+-------------------------------------------------------------------------------------
+Langkah-langkah menggunakan NodeJs dan React:
+ - buat folder utk project MERN
+ - declare npm init
+ - install package babel
+   - babel/cli
+   - babel/core
+   - babel/preset-react
+ - tambahkan configurasi pada file package.json
+   - "scripts": {
+       "build": "babel src --out-dir public -w" - maksudnya ialah kita memberitahu babel agar mencompile semua file yg terdapat pada folder src dan hasil compile nya akan disimpan ke dalam folder public
+                                                - -w bermaksud kita menggunakan model watch yaitu babel akan mendeteksi jika terdapat sebarang perubahan pada file app.js yg terdapat dalam folder src jadi kita tidak perlu lagi melakukan compile ulang
+     },
+ - buat file dengan extension .babelrc 
+   - utk membuat configurasi pada babel
+   - {
+    	"presets": ["@babel/preset-react"]
+     }
+ - buat folder src dan public
+   - buat 2 file di dalam folder public yaitu app.js dan index.html - file app.js ini tempat js standart akan disimpan selepas melakukan compile terhadap program JSX yg kita buat
+                                                                    - file index.html tempat dimana kita membuat struktur root dan melakukan import terhadap reactjs
+   - buat 1 file di dalam folder src yaitu app.js - file ini tempat kita buat program menggunakan JSX
+ - mengimport reactJs - link import ada di CDN Link di website react
+ - install package lite-server menggunakan npm
+ - tambahkan configurasi pada file package.json
+   - "scripts": {
+    	"start": "lite-server --baseDir public", - maksudnya ialah 
+      },
+ - jalankan perintah `npm run build` atau `yarn build`
+ - jalankan printah `npm start`
+--------------------------------------------------------------------------------------------
+Create React App - CRA
+React Router - Third-party Library
+package History - Browser History API (pushState)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

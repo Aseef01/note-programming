@@ -1,0 +1,21 @@
+#DOM
+ - this.dataset.id - utk mengambil data-id yang dibuat di element HTML
+
+ - newNode = document.createElement("label"); - utk membuat element HTML
+ - newTextNode = document.createTextNode("Name"); - utk membuat text
+ - newNode.appendChild(newTextNode ); - utk memasukkan text ke dalam element yg baru dibuat
+ - newNode.setAttribute("for", "name") - utk set attribute dan value
+ - element.append(newNode); - element dapat daripada querySelector("");
+
+ - element.style.opacity = "0"; - mengubas style css
+
+ - e.target.parentElement - utk mengambil parent dari element yg ditekan
+ - e.target.classList - utk melihat ada class ape saje yg terdapat pada element yg ditekan
+ - e.target.classList.toggle('active') - utk membuat toggle pada class active yg terdapat pada element yg ditekan
+
+----------------------------------------------------------------------
+const root = document.querySelector('#root');
+const element = document.createElement('h1');
+element.textContent = 'Hello World';
+element.className = 'heading-1';
+root.appendChild(element);

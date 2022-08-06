@@ -1,0 +1,22 @@
+npm init = utk initialize folder ini sebagai project npm
+npm init -y = utk initialize folder ini sebagai project npm dengan nilai default semuanya
+node app.js = menjalankan file node
+node . = menjalankan file index.js
+
+npm start = 
+npm test = 
+npm run dev = utk keyword selain dari start dan test perlu tambahkan run sebelumnya
+
+npm install express@4.18.1
+npm i express@4.18.1
+npm uninstall express
+
+# Jenis Module
+  - Core Module
+    - http - createServer
+  - Local Module
+  - Third-party Module
+    - nodemon
+    - express
+    - ejs
+    - babel - sesuai digunakan bersama reactJs

@@ -1,0 +1,48 @@
+# Digital Ocean
+1. Register Account
+
+2. Add Payment Method
+
+3. Create Cloud Server/Droplets
+   1. select SSH keys (better)
+     - open git bash
+     - type (ssh-keygen)
+     - type (nama file contohnya digital-ocean-key) 
+       - ia akan membuat 2 file yaitu:
+         1. digital-ocean-key (private)
+         2. digital-ocean-key.pub (public)
+     - enter 2 kali untuk skip passphrase
+     - type (cat digital-ocean-key.pub) utk lihat isi dari file
+     - copy SSH key content
+   2. select Password
+      - create password
+
+4. Open Git Bash (if you select SSH keys)
+   - type (ssh -i digital-ocean-key root@159.223.90.81)
+
+5. Open Git Bash (if you select password)
+   - type (ssh root@159.223.90.81)
+   - type (yes)
+   - type password
+
+   Install Nginx
+   - type (sudo apt-get update)
+   - type (sudo apt-get install -y nginx)
+
+   Adjust Firewall
+   - type (sudo ufw app list)
+   - type (sudo ufw allow 'Nginx HTTP')
+
+   Check the web server status
+   - type (systemctl status nginx)
+
+   Few commands for reference
+   - type (sudo systemctl stop nginx)
+   - type (sudo systemctl start nginx)
+
+6. Create Domain Name
+   - click Networking on sidebar digital ocean
+   - click Domains
+
+
+adduser aseef (username bebas)
